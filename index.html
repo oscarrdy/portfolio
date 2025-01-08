@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Rødøy</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/select.css">
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+    <script type="module" src="./scripts/index.js"></script>
+</head>
+<body>
+<div class="top-gradient"></div>
+<div id="body">
+            
+    <header class="header">
+        <nav class="navbar">
+            <span class="navbar__title">Oscar Rødøy</span>
+            <div class="navbar__flex-container">
+                <!-- <a class="navbar__link" href="#projects" data-tid="nl-projects">Projects</a>
+                <a class="navbar__link" href="#about" data-tid="nl-about">About</a>
+                <a class="navbar__link" href="#contact" data-tid="nl-contact">Contact</a>
+                <span class="navbar__divider"></span> -->
+      
+                <div class="select navbar__select" id="elmNavbarSelect">
+                    <button 
+                        class="select__button" 
+                        id="elmNavbarSelectButton" 
+                        type="button" 
+                        role="combobox" 
+                        aria-controls="elmNavbarSelectList" 
+                        aria-haspopup="listbox" 
+                        aria-expanded="false"
+                    >
+                        <span class="select__option">
+                            <img src="assets/EN.svg" alt="english">
+                            <span>EN</span>
+                        </span>
+                    </button>
+                    <ul class="select__list" role="listbox" id="elmNavbarSelectList" aria-label="select a language">
+                        <li class="select__list-item" role="option" aria-selected="true" data-selected data-value="en">
+                            <span class="select__option">
+                                <img src="assets/EN.svg" alt="english">
+                                <span>EN</span>
+                            </span>
+                        </li>
+                        <li class="select__list-item" role="option" aria-selected="false" data-value="no">
+                            <span class="select__option">
+                                <img src="assets/NO.svg" alt="norwegian">
+                                <span>NO</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+        <h1 class="header__title">
+            <span data-tid="title-s1">Hello 👋</span>
+            <span data-tid="title-s2">I'm Oscar Rødøy,</span>
+            <span data-tid="title-s3">passionate fullstack developer</span>
+            <span data-tid="title-s4">based in Oslo, Norway.</span>
+        </h1>
+    </header>
+    
+    <section>
+        <div class="sticky-container">
+            <h2 class="sub-heading sticky-element">
+                <a href="#projects">
+                    <span data-tid="title-button">My recent work</span>
+                    <svg viewBox="0 0 448 512"><path d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"/></svg>
+                </a>
+            </h2>
+            <div id="projects"></div>
+        </div>
+        <div class="project-container">
+
+            <article class="project">
+                <a class="project__image-container" href="https://shop-freshjuice.com" target="_blank">
+                    <img class="project__image" src="assets/project-image-1.png" alt="fresh juice homepage">
+                </a>
+                <div class="project__tags-container">
+                    <span class="project__tag">
+                        <img src="./assets/nodejs.svg" alt="node js logo">
+                        <span>NodeJS</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/expressjs.svg" alt="express js logo">
+                        <span>ExpressJS</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/mongodb.png" alt="mongo db logo">
+                        <span>MongoDB</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/stripe.jpeg" alt="stripe logo">
+                        <span>Stripe</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/javascript.png" alt="javascript logo">
+                        <span>JavaScript</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/css.png" alt="css logo">
+                        <span>CSS</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/html.png" alt="html logo">
+                        <span>HTML</span>
+                    </span>
+                </div>
+                <h3 class="project__title" data-tid="p1-title">Fresh Juice - Full-Stack E-Commerce Website</h3>
+                <p class="project__description" data-tid="p1-desc">A fully functional e-commerce website for selling portable blenders, featuring Stripe-powered payment processing, geo-location-based currency adjustment, and a basic admin/order management system.</p>
+                <div class="project__links-container">
+                    <a class="project__link" href="https://shop-freshjuice.com" target="_blank">
+                        <img src="./assets/globe.png" alt="globe icon">
+                        <span data-tid="p1-cta1">View Website</span>
+                    </a>
+                    <a class="project__link" href="https://github.com/oscarrdy/fresh-juice" target="_blank">
+                        <img src="./assets/github.png" alt="github logo">
+                        <span data-tid="p1-cta2">View Source</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project">
+                <a class="project__image-container" href="https://oscarrdy.github.io/react-component-library/" target="_blank">
+                    <img class="project__image" src="assets/project-image-2.png" alt="">
+                </a>
+                <div class="project__tags-container">
+                    <span class="project__tag">
+                        <img src="./assets/react.png" alt="react logo">
+                        <span>React</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/vite.png" alt="vite logo">
+                        <span>Vite</span>
+                    </span>
+                </div>
+                <h3 class="project__title" data-tid="p2-title">React Component Library</h3>
+                <p class="project__description" data-tid="p2-desc">A small collection of accessible, reusable, and optimized React components, designed to streamline your development process. Each component is built with modern React practices and accessibility in mind.</p>
+                <div class="project__links-container">
+                    <a class="project__link" href="https://oscarrdy.github.io/react-component-library/" target="_blank">
+                        <img src="./assets/globe.png" alt="globe icon">
+                        <span data-tid="p2-cta1">View Website</span>
+                    </a>
+                    <a class="project__link" href="https://github.com/oscarrdy/react-component-library" target="_blank">
+                        <img src="./assets/github.png" alt="github logo">
+                        <span data-tid="p2-cta2">View Source</span>
+                    </a>
+                </div>
+            </article>
+            
+            <article class="project">
+                <a class="project__image-container" href="https://oscarrdy.github.io/breakout/" target="_blank">
+                    <img class="project__image" src="assets/project-image-3.png" alt="">
+                </a>
+                <div class="project__tags-container">
+                    <span class="project__tag">
+                        <img src="./assets/javascript.png" alt="javascript logo">
+                        <span>JavaScript</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/css.png" alt="css logo">
+                        <span>CSS</span>
+                    </span>
+                    <span class="project__tag">
+                        <img src="./assets/html.png" alt="html logo">
+                        <span>HTML</span>
+                    </span>
+                </div>
+                <h3 class="project__title" data-tid="p3-title">Breakout - A JavaScript Game</h3>
+                <p class="project__description" data-tid="p3-desc">An Atari Breakout-inspired game featuring multiple power-ups and levels. Includes model-view-control (MVC) architecture, advanced collision detection, and a scoreboard system.</p>
+                <div class="project__links-container">
+                    <a class="project__link" href="https://oscarrdy.github.io/breakout/" target="_blank">
+                        <img src="./assets/globe.png" alt="globe icon">
+                        <span data-tid="p3-cta1">View Website</span>
+                    </a>
+                    <a class="project__link" href="https://github.com/oscarrdy/breakout" target="_blank">
+                        <img src="./assets/github.png" alt="github logo">
+                        <span data-tid="p3-cta2">View Source</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project__image-container">
+                    <img class="project__image" src="assets/project-image-4.png" alt="">
+                </div>
+                <h3 class="project__title" data-tid="p4-title">Shopify Clone - Coming Soon</h3>
+                <p class="project__description" data-tid="p4-desc1">A SaaS application made to mimic Shopify and all its features, including multi-tenancy architecture, automatic cloud provisioning, seamless stripe onboarding, and user-friendly dashboards.</p>
+                <p class="project__description" data-tid="p4-desc2">Currently in early stages of learning and development. Stack: <strong>Figma</strong> for the design, <strong>NextJS</strong> as the framework, <strong>AWS</strong> for cloud hosting, <strong>Cloudinary</strong> for media storage, <strong>PostgreSQL</strong> for the database.</p>
+            </article>
+
+        </div>
+    </section>
+    
+</div>
+</body>
+</html>
